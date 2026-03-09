@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>傳單 Flyers — 刪除帳戶 Delete Account</title>
+<style>
+  :root { --bg: #0D0D0D; --surface: #1A1A2E; --pink: #FF2D78; --cyan: #00F5FF; --text: #E0E0E0; --muted: #888; --border: #2A2A2A; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: -apple-system, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif; line-height: 1.7; }
+  .container { max-width: 720px; margin: 0 auto; padding: 48px 24px 80px; }
+  .lang-toggle { text-align: right; margin-bottom: 32px; }
+  .lang-toggle button { background: var(--surface); color: var(--cyan); border: 1px solid var(--cyan); border-radius: 8px; padding: 8px 18px; cursor: pointer; font-size: 14px; transition: .2s; }
+  .lang-toggle button:hover { background: var(--cyan); color: var(--bg); }
+  .logo { text-align: center; margin-bottom: 40px; }
+  .logo h1 { font-size: 48px; color: var(--pink); text-shadow: 0 0 20px rgba(255,45,120,.5); }
+  .logo p { color: var(--muted); font-size: 14px; margin-top: 4px; }
+  h2 { color: var(--pink); font-size: 20px; margin: 36px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
+  h3 { color: var(--cyan); font-size: 16px; margin: 20px 0 8px; }
+  p, li { font-size: 15px; color: var(--text); margin-bottom: 8px; }
+  ul, ol { padding-left: 20px; margin-bottom: 12px; }
+  ol li { margin-bottom: 12px; }
+  .highlight { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+  .highlight strong { color: var(--pink); }
+  .data-list { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin: 16px 0; }
+  .data-list li { color: var(--text); margin-bottom: 6px; }
+  .data-list li strong { color: var(--cyan); }
+  .contact { background: var(--surface); border-radius: 12px; padding: 20px; margin-top: 32px; }
+  .contact a { color: var(--cyan); text-decoration: none; }
+  .contact a:hover { text-decoration: underline; }
+  .email-box { display: inline-block; background: var(--surface); border: 1px solid var(--cyan); border-radius: 8px; padding: 10px 20px; margin: 8px 0; font-size: 16px; }
+  .email-box a { color: var(--cyan); text-decoration: none; font-weight: 600; }
+  .back-link { display: inline-block; margin-bottom: 24px; color: var(--cyan); text-decoration: none; font-size: 14px; }
+  .back-link:hover { text-decoration: underline; }
+  footer { text-align: center; color: var(--muted); font-size: 13px; margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border); }
+  .section[data-lang="en"] { display: none; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="lang-toggle">
+  <button onclick="toggleLang()">English / 中文</button>
+</div>
+
+<a href="index.html" class="back-link">&larr; 返回私隱政策 / Back to Privacy Policy</a>
+
+<div class="logo">
+  <h1>傳單</h1>
+  <p>Flyers App</p>
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- TRADITIONAL CHINESE                         -->
+<!-- ════════════════════════════════════════════ -->
+<div class="section" data-lang="zh">
+
+<h2>刪除帳戶</h2>
+<p>我們尊重你嘅私隱權利。如果你想刪除你嘅傳單帳戶及所有相關資料，請按照以下步驟操作。</p>
+
+<h2>如何提交刪除請求</h2>
+<ol>
+  <li>發送電郵至以下地址：<br>
+    <div class="email-box"><a href="mailto:privacy@flyers.app?subject=帳戶刪除請求 Account Deletion Request">privacy@flyers.app</a></div>
+  </li>
+  <li>喺電郵主題寫上「<strong>帳戶刪除請求</strong>」</li>
+  <li>喺電郵內文提供你註冊時使用嘅<strong>電話號碼</strong>，以便我們核實你嘅身份</li>
+</ol>
+
+<h2>將會刪除嘅資料</h2>
+<p>帳戶刪除後，以下資料將會被永久移除：</p>
+<div class="data-list">
+<ul>
+  <li><strong>帳戶資料</strong> — 電話號碼、用戶檔案、角色設定</li>
+  <li><strong>位置資料</strong> — 所有已記錄嘅位置數據</li>
+  <li><strong>偏好設定</strong> — 傳單類別偏好、通知設定</li>
+  <li><strong>派發記錄</strong> — 傳單領取及核銷記錄</li>
+</ul>
+</div>
+
+<div class="highlight">
+  <strong>請注意：</strong>匿名化嘅匯總統計數據（例如傳單總瀏覽次數）可能會被保留，但無法追溯至你嘅個人身份。
+</div>
+
+<h2>處理時間</h2>
+<p>我們會喺收到請求後 <strong>30 日內</strong>完成帳戶刪除。刪除完成後，你會收到確認電郵。</p>
+
+<div class="highlight">
+  <strong>重要提示：</strong>帳戶一旦刪除便無法恢復。如果你日後想再使用傳單，需要重新註冊帳戶。
+</div>
+
+<div class="contact">
+  <h3>聯絡我們</h3>
+  <p>如有任何疑問，請聯絡：</p>
+  <p>電郵：<a href="mailto:privacy@flyers.app">privacy@flyers.app</a></p>
+</div>
+
+</div>
+
+<!-- ════════════════════════════════════════════ -->
+<!-- ENGLISH                                     -->
+<!-- ════════════════════════════════════════════ -->
+<div class="section" data-lang="en">
+
+<h2>Delete Account</h2>
+<p>We respect your privacy rights. If you would like to delete your Flyers account and all associated data, please follow the steps below.</p>
+
+<h2>How to Submit a Deletion Request</h2>
+<ol>
+  <li>Send an email to:<br>
+    <div class="email-box"><a href="mailto:privacy@flyers.app?subject=Account Deletion Request">privacy@flyers.app</a></div>
+  </li>
+  <li>Use the subject line "<strong>Account Deletion Request</strong>"</li>
+  <li>Include the <strong>phone number</strong> you used to register, so we can verify your identity</li>
+</ol>
+
+<h2>Data That Will Be Deleted</h2>
+<p>Upon account deletion, the following data will be permanently removed:</p>
+<div class="data-list">
+<ul>
+  <li><strong>Account Information</strong> — Phone number, user profile, role settings</li>
+  <li><strong>Location Data</strong> — All recorded location data</li>
+  <li><strong>Preferences</strong> — Flyer category preferences, notification settings</li>
+  <li><strong>Delivery History</strong> — Flyer collection and redemption records</li>
+</ul>
+</div>
+
+<div class="highlight">
+  <strong>Please note:</strong> Anonymized, aggregated statistics (e.g., total flyer views) may be retained but cannot be traced back to your identity.
+</div>
+
+<h2>Processing Time</h2>
+<p>We will complete the account deletion within <strong>30 days</strong> of receiving your request. You will receive a confirmation email once the deletion is complete.</p>
+
+<div class="highlight">
+  <strong>Important:</strong> Account deletion is irreversible. If you wish to use Flyers again in the future, you will need to create a new account.
+</div>
+
+<div class="contact">
+  <h3>Contact Us</h3>
+  <p>For any questions, please contact:</p>
+  <p>Email: <a href="mailto:privacy@flyers.app">privacy@flyers.app</a></p>
+</div>
+
+</div>
+
+<footer>
+  &copy; 2025 傳單 Flyers App. All rights reserved.
+</footer>
+
+</div>
+
+<script>
+function toggleLang() {
+  const zh = document.querySelector('[data-lang="zh"]');
+  const en = document.querySelector('[data-lang="en"]');
+  if (zh.style.display === 'none') {
+    zh.style.display = 'block';
+    en.style.display = 'none';
+    document.documentElement.lang = 'zh-Hant';
+  } else {
+    zh.style.display = 'none';
+    en.style.display = 'block';
+    document.documentElement.lang = 'en';
+  }
+}
+</script>
+</body>
+</html>
